@@ -116,23 +116,4 @@ int main(){
     }while(true);
     
     return 0;
-}void searchGrade(vector<string> name,vector<int> score,vector<char> grade, string key){
-    int count=0;
-    cout << "---------------------------------\n";
-    for (unsigned int i = 0; i < score.size(); i++)
-    {
-        
-        string grade_s;
-        grade_s.push_back(grade[i]);
-        if(grade_s==key){
-            cout<<name[i]<<" ("<<score[i]<<")\n";
-            count += 1;
-            
-        }
-        
-    }
-    if(count==0){
-            cout<<"Cannot found.\n";
-        }
-    cout << "---------------------------------\n";
 }
